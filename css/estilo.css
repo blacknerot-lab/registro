@@ -1,0 +1,12 @@
+body {
+            font-family: Arial;
+        }
+        .hidden {
+            display: none;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 320px;
+            margin-bottom: 20px;
+        }

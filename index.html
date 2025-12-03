@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Registro de Usuario</h1>
+
+    <div id="registerSection" class="container">
+
+        <form id="registerForm">
+
+            <label>Nombre de usuario:</label><br>
+            <input type="text" id="username" required><br><br>
+
+            <label>Correo electrónico:</label><br>
+            <input type="text" id="email" required><br><br>
+
+            <label>Número de teléfono:</label><br>
+            <input type="text" id="phone" required><br><br>
+
+            <label>Contraseña:</label><br>
+            <input type="password" id="password" required><br>
+            <input type="checkbox" id="showPassReg"> Mostrar contraseña<br><br>
+
+            <input type="submit" id="register-btn" value="Registrarse">
+        </form>
+        <div id="recoverReg" class="hidden">
+            <p><b>¿Olvidaste tu contraseña?</b></p>
+            <button onclick="goToRecover()">Recuperar contraseña</button>
+        </div>
+
+    </div>
+    <div id="loginSection" class="container hidden">
+
+        <h2>Iniciar Sesión</h2>
+
+        <form id="loginForm">
+
+            <label>Usuario:</label><br>
+            <input type="text" id="loginUser" required><br><br>
+
+            <label>Contraseña:</label><br>
+            <input type="password" id="loginPassword" required><br>
+            <input type="checkbox" id="showPassLogin"> Mostrar contraseña<br><br>
+
+            <input type="submit" id="loginBtn" value="Ingresar">
+        </form>
+
+        <div id="recoverLogin" class="hidden">
+            <p><b>Cuenta bloqueada</b></p>
+            <button onclick="goToRecover()">Recuperar contraseña</button>
+        </div>
+
+    </div>
+    <div id="recoverSection" class="container hidden">
+
+        <h2>Recuperar Contraseña</h2>
+
+        <form id="recoverForm">
+
+            <label>Usuario:</label><br>
+            <input type="text" id="recoverUser" required><br><br>
+
+            <label>Nueva Contraseña:</label><br>
+            <input type="password" id="newPassword" required><br><br>
+
+            <label>Confirmar Nueva Contraseña:</label><br>
+            <input type="password" id="confirmPassword" required><br>
+            <input type="checkbox" id="showPassRecover"> Mostrar contraseña<br><br>
+
+            <input type="submit" value="Guardar Nueva Contraseña">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
